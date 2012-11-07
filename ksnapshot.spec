@@ -1,6 +1,6 @@
 Name:		ksnapshot
 Summary:	KDE Screenshot Utility
-Version: 4.9.2
+Version: 4.9.3
 Release: 1
 Epoch:		2
 Group:		Graphical desktop/KDE
