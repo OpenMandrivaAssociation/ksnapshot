@@ -1,0 +1,24 @@
+diff -urN ksnapshot-4.10.3/freeregiongrabber.cpp ksnapshot-4.10.3-patched/freeregiongrabber.cpp
+--- ksnapshot-4.10.3/freeregiongrabber.cpp	2013-05-03 15:40:41.793885775 +1100
++++ ksnapshot-4.10.3-patched/freeregiongrabber.cpp	2013-05-17 20:47:43.150641644 +1100
+@@ -184,6 +184,8 @@
+ 
+ void FreeRegionGrabber::mousePressEvent( QMouseEvent* e )
+ {
++//  Make sure we have keyboard grabbed, init() is not reliable for this
++    grabKeyboard();
+     pBefore = e->pos();
+     showHelp = !helpTextRect.contains( e->pos() );
+     if ( e->button() == Qt::LeftButton )
+diff -urN ksnapshot-4.10.3/regiongrabber.cpp ksnapshot-4.10.3-patched/regiongrabber.cpp
+--- ksnapshot-4.10.3/regiongrabber.cpp	2013-05-03 15:40:41.795885756 +1100
++++ ksnapshot-4.10.3-patched/regiongrabber.cpp	2013-05-17 20:47:21.941369100 +1100
+@@ -199,6 +199,8 @@
+ 
+ void RegionGrabber::mousePressEvent( QMouseEvent* e )
+ {
++//  Make sure we have keyboard grabbed, init() is not reliable for this
++    grabKeyboard();
+     showHelp = !helpTextRect.contains( e->pos() );
+     if ( e->button() == Qt::LeftButton )
+     {
