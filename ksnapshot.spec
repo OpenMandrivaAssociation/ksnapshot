@@ -1,11 +1,11 @@
-Name:		ksnapshot
 Summary:	KDE Screenshot Utility
-Version:	4.10.3
-Release:	3
+Name:		ksnapshot
+Version:	4.10.4
+Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2 GFDL
-URL:		http://www.kde.org/applications/graphics/ksnapshot
+Url:		http://www.kde.org/applications/graphics/ksnapshot
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 # Workaround keyboard grabbing issues with delayed capture
 # When capturing screenshots with popped up menus, in some cases
@@ -53,6 +53,9 @@ Features:
 %makeinstall_std -C build
 
 %changelog
+* Wed Jun 05 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.10.4-1
+- New version 4.10.4
+
 * Fri May 17 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.10.3-3
 - Add patch to workaround keyboard grabbing issues with delayed capture
 
