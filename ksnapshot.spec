@@ -5,7 +5,7 @@ Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2 GFDL
-Url:		http://www.kde.org/applications/graphics/ksnapshot
+Url:		https://www.kde.org/applications/graphics/ksnapshot
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 # Workaround keyboard grabbing issues with delayed capture
 # When capturing screenshots with popped up menus, in some cases
